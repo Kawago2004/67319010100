@@ -1,26 +1,28 @@
-style.css body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfdfd;
-  text-align: center;
-  padding-top: 100px;
+body {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-  color: #000c18;
-  font-size: 3em;
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #2d2f3a;
+  padding: 0;
 }
 
-p {
-  color: #e41c97;
-  font-size: 1.5em;
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
 }
 
-.welcome-box {
-  background-color: #ffd3d3;
-  padding: 40px;
-  margin: 0 auto;
-  width: 60%;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(19, 127, 250, 0.1);
+.navbar a:hover {
+  background-color: #4e505d;
+}
+
+.navbar a.active {
+  background-color: #04aa6d;
+  color: white;
 }
