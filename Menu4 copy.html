@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>เมนูอาหารคนจีน</title>
+  <link rel="stylesheet" href="Menu.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="MEnu1.html">อาหารว่าง</a>
+    <a href="Menu2.html">อาหารหวาน</a>
+    <a href="Menu3.html">อาหารขยะ</a>
+    <a href="Menu4.html" class="active">อาหารคนรวย</a>
+    <a href="Menu5.html">อาหารคนจน</a>
+  </div>
+<!-- โหลดฟอนต์ Kanit -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+<style>
+  body {
+    font-family: 'Kanit', sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .food-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .food-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .food-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .food-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .food-category {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+  }
+
+  .food-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .food-price {
+    font-size: 1.1rem;
+    color: #2c7a7b;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1>รายการอาหาร</h1>
+
+<div class="food-list">
+  <div class="food-item">
+    <img class="food-image" src="https://th.bing.com/th/id/OIP.q2GQRiAeBvgUAdZtbshavAAAAA?w=115&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+    <div class="food-info">
+      <div class="food-category">เนื้อ</div>
+      <div class="food-name">หมาหั่น</div>
+      <div class="food-price">ราคา 20K บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://media.istockphoto.com/id/172751471/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%8A%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C.jpg?b=1&s=612x612&w=0&k=20&c=AFo418bHmMkm1jTeex0V7wyBJPP4reWyjBUuK91ZZlQ=">
+    <div class="food-info">
+      <div class="food-category">คาเวีย</div>
+      <div class="food-name">ไข่ปลาคาเวีย</div>
+      <div class="food-price">ราคา 15K บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://media.istockphoto.com/id/1166248187/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B9%80%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%AA%E0%B8%B1%E0%B8%99-%E0%B9%80%E0%B8%AD%E0%B8%A5%E0%B8%81%E0%B9%8C%E0%B9%80%E0%B8%8B%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87.jpg?b=1&s=612x612&w=0&k=20&c=rNXr2UFLVcS6FtngrHIP7_S8mcD36ssGPzN-1FUZlfU=">
+    <div class="food-info">
+      <div class="food-category">แกะ</div>
+      <div class="food-name">เนื้อแกะจากหุบเขาคุณหลุนย่าง</div>
+      <div class="food-price">ราคา 5000 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2023/11/16/639f2cc5012a40a39bdb1382eb2f22e4.jpg">
+    <div class="food-info">
+      <div class="food-category">กุ้ง</div>
+      <div class="food-name">กุ้งล็อบเตอร์จากทะเลอีสบลู</div>
+      <div class="food-price">ราคา 8000 บาท</div>
+    </div>
+  </div>
+</div>
+
+<div class="food-list">
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2024/11/01/8f0b93927eb94bb5b21793aa74fabfde.jpg">
+    <div class="food-info">
+      <div class="food-category">กุ้ง</div>
+      <div class="food-name">ต้มยำกุ้งจากเขาเอเวอเรส</div>
+      <div class="food-price">ราคา 4000 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2023/08/24/51358961294a49698655588c3f01a7df.jpg">
+    <div class="food-info">
+      <div class="food-category">ข้าว</div>
+      <div class="food-name">ข้าวผัดมูริม</div>
+      <div class="food-price">ราคา 10K บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2020/01/29/403a671bff0d47a09b561103da719fd5.jpg">
+    <div class="food-info">
+      <div class="food-category">เนื้อ</div>
+      <div class="food-name">เนื้อเสียบไม้</div>
+      <div class="food-price">ราคา 1000 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2021/03/10/74b25a825b7c442184defce5e14630f1.jpg">
+    <div class="food-info">
+      <div class="food-category">หอย</div>
+      <div class="food-name">หอยย่างราสซีส</div>
+      <div class="food-price">ราคา 1000 บาท</div>
+    </div>
+  </div>
+</div>
+
+<div class="food-list">
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2024/12/16/f0a5751f0e8445119651029a94bb08d2.jpg">
+    <div class="food-info">
+      <div class="food-category">เนื้อ</div>
+      <div class="food-name">สเต็กเนื้อจากญี่ปุ่น</div>
+      <div class="food-price">ราคา 2000 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/400x0/2020/08/06/91236bb175de4de59a741c13e7174bda.jpg">
+    <div class="food-info">
+      <div class="food-category">เนื้อ</div>
+      <div class="food-name">หมูกรอบย่าง</div>
+      <div class="food-price">ราคา 1000 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://img.wongnai.com/p/1600x0/2020/04/04/d561f6f0e1074f28a8b278887f19d676.jpg">
+    <div class="food-info">
+      <div class="food-category">ไข่กุ้ง</div>
+      <div class="food-name">ท็อปปิ้งไข่กุ้ง</div>
+      <div class="food-price">ราคา 1000 บาท</div>
+    </div>
+  </div>
+
+  <div class="food-item">
+    <img class="food-image" src="https://th.bing.com/th/id/OIP.WWF7AzRAiWeynkdVXPP2igHaEc?w=300&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+    <div class="food-info">
+      <div class="food-category">ฉลาม</div>
+      <div class="food-name">ฉลามทั้งตัว</div>
+      <div class="food-price">ราคา 20K บาท</div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
